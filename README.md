@@ -1,1 +1,1 @@
-# LoginTemplate
+# LoginTemplate written in PHP
