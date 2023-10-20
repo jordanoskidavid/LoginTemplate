@@ -1,0 +1,25 @@
+version: "3.8"
+services:
+  web:
+    image: richarvey/nginx-php-fpm:latest
+    ports: 
+      - 80:80
+    links:
+      - "db:database"
+    volumes: 
+      - ./src:/var/www/html
+      - ./default.conf:/etc/nginx/sites-enabled/default.conf
+  db:
+    image: mysql
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    environment: 
+      MYSQL_ROOT_PASSWORD: test
+      TZ: "Europe/Skopje"
+    ports:
+      - 3306:3306
+    volumes:
+      - ./init:/docker-entrypoint-initdb.d
+      - db-data:/var/lib/mysql
+volumes: 
+  db-data:  
