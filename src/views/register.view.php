@@ -17,37 +17,34 @@
         <hr>
         <label for="name"><b>Name</b></label>
         <input type="text" placeholder="Enter Name" name="name" id="name" required>
-        <span><?= $errors['name']?></span>
+        <span style="color: #ff0300"><?= $errors['name']?></span>
         <br>
         <br>
         <label for="surname"><b>Surname</b></label>
         <input type="text" placeholder="Enter surname" name="surname" id="surname" required>
-        <span><?= $errors['surname']?></span>
+        <span style="color: #ff0300"><?= $errors['surname']?></span>
         <br>
         <br>
         <label for="email"><b>Email</b></label>
         <input type="text" placeholder="Enter Email" name="email" id="email" required>
-        <span><?= $errors['email']?></span>
+        <span style="color: #ff0300"><?= $errors['email']?></span>
         <br>
         <br>
         <label for="psw"><b>Password</b></label>
         <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
-        <span><?= $errors['psw']?></span>
+        <span style="color: #ff0300"><?= $errors['psw']?></span>
         <br>
         <br>
         <label for="number"><b>Phone Number</b></label>
         <input type="tel" placeholder="Enter Number" name="number" id="number" required>
-        <span><?= $errors['number']?></span>
+        <span style="color: #ff0300"><?= $errors['number']?></span>
         <br>
         <br>
         <label for="birthday"><b>Birth Date</b></label>
         <input type="date" placeholder="Enter Birth Date" name="birthday" id="birthday" required>
-        <span><?= $errors['birthday']?></span>
+        <span style="color: #ff0300"><?= $errors['birthday']?></span>
         <br>
         <br>
-        <label for="identity"><b>Identity Card Number</b></label>
-        <input type="text" placeholder="Enter card number" name="identity" id="identity" required>
-        <span><?= $errors['identity']?></span>
 
         <hr>
         <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
